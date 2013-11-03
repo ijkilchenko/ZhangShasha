@@ -10,16 +10,9 @@ public class Main {
         System.out.println("Hello World!");
 
         String tree1Str= "f(d(a c(b))e)";
-        String tree2Str= "f(c(d(a b))e)";
 
-        Node myroot= new Node("F");
-        myroot.addChild(new Node("A"));
-        myroot.addChild(new Node("B"));
-
-        Tree mytree= new Tree(myroot);
-
-        System.out.println(mytree.printTree());
-
+        Tree treeFromString= new Tree(tree1Str);
+        System.out.println(treeFromString.printTree());
 
     }
 
