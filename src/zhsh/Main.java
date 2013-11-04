@@ -13,9 +13,10 @@ public class Main {
 
         String tree1Str1= "f(d(a c(b))e)";
         String tree1Str2= "f(c(d(a b))e)";
+        String tree1Str3= "f(c d a(b c))";
 
         Node treeFromString= new Node();
-        treeFromString= treeFromString.parseTree(tree1Str2);
+        treeFromString= treeFromString.parseTree(tree1Str3);
         System.out.println(treeFromString.printTree());
 
     }

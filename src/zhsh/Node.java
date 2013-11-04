@@ -16,28 +16,32 @@ public class Node {
     public Node(){
     }
 
+    public Node(String name){
+        this.name= name;
+    }
+
     public static Node parseTree(String s) throws IOException {
         StreamTokenizer tokenizer = new StreamTokenizer(new StringReader(s));
-        tokenizer.nextToken();                      // Move to first token
-        Node result = new Node(tokenizer);     // Parse root node (and children)
+        tokenizer.nextToken(); //Move to first token.
+        Node result = new Node(tokenizer); //Parse root node (and children).
         if (tokenizer.ttype != StreamTokenizer.TT_EOF) {
             throw new RuntimeException("Leftover token: "+ tokenizer.ttype);
         }
         return result;
     }
 
-    Node(StreamTokenizer tokenizer) throws IOException {
+    public Node(StreamTokenizer tokenizer) throws IOException {
         if (tokenizer.ttype != StreamTokenizer.TT_WORD) {
-            throw new RuntimeException("identifier expected; got: " + tokenizer.ttype);
+            throw new RuntimeException("Identifier expected; got: " + tokenizer.ttype);
         }
-        name = tokenizer.sval;                  // read and
-        tokenizer.nextToken();                       // consume the name
-        if (tokenizer.ttype == '(') {           // Children?
-            tokenizer.nextToken();                     // Yes, consume '('
+        name = tokenizer.sval; //Read and
+        tokenizer.nextToken(); //Consume the name.
+        if (tokenizer.ttype == '(') { //Children?
+            tokenizer.nextToken(); //Yes, consume '('.
             do {
-                children.add(new Node(tokenizer));  // Add and parse a child
-            } while (tokenizer.ttype != ')');     // Until we reach ')'
-            tokenizer.nextToken();                     // Consume ')'
+                children.add(new Node(tokenizer)); //Add and parse a child.
+            } while (tokenizer.ttype != ')'); //Until we reach ')'.
+            tokenizer.nextToken(); //Consume ')'.
         }
     }
 

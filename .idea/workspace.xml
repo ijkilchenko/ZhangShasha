@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87573c71-2e1a-49c9-812d-6e05c473c3c5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/zhsh/Tree.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zhsh/Main.java" afterPath="$PROJECT_DIR$/src/zhsh/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zhsh/Node.java" afterPath="$PROJECT_DIR$/src/zhsh/Node.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ZhangShasha.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1383599984498" ignored="false" />
     <file path="/ActionScript File Header.txt.ft" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1382779280551" ignored="false" />
-    <file path="/Node.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1383600777051" ignored="false" />
+    <file path="/Node.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1383601701095" ignored="false" />
     <file path="/File Header.txt.ft" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1382779494885" ignored="false" />
     <file path="/Tree.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1383600439034" ignored="false" />
     <file path="/Main.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1383600951271" ignored="false" />
@@ -80,7 +78,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zhsh/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="58" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
+            <state line="13" column="42" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -89,9 +87,9 @@
       <file leaf-file-name="Node.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/zhsh/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="22" selection-start="770" selection-end="770" vertical-scroll-proportion="0.6217617">
+            <state line="43" column="49" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.8497409">
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
                 <element signature="e#269#275#0" expanded="true" />
               </folding>
             </state>
@@ -119,8 +117,8 @@
         <option value="$PROJECT_DIR$/src/Node.java" />
         <option value="$PROJECT_DIR$/src/Tree.java" />
         <option value="$PROJECT_DIR$/src/zhsh/Tree.java" />
-        <option value="$PROJECT_DIR$/src/zhsh/Node.java" />
         <option value="$PROJECT_DIR$/src/zhsh/Main.java" />
+        <option value="$PROJECT_DIR$/src/zhsh/Node.java" />
       </list>
     </option>
   </component>
@@ -418,7 +416,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
             <element signature="e#269#275#0" expanded="true" />
           </folding>
         </state>
@@ -435,7 +433,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
             <element signature="e#269#275#0" expanded="true" />
           </folding>
         </state>
@@ -452,7 +450,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
             <element signature="e#269#275#0" expanded="true" />
           </folding>
         </state>
@@ -465,16 +463,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zhsh/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="58" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
+        <state line="13" column="42" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zhsh/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="22" selection-start="770" selection-end="770" vertical-scroll-proportion="0.6217617">
+        <state line="43" column="49" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.8497409">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
             <element signature="e#269#275#0" expanded="true" />
           </folding>
         </state>
