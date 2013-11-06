@@ -11,13 +11,15 @@ public class Main {
     public static void main(String[] args) throws IOException{
         System.out.println("Hello World!");
 
+        //Sample trees.
         String tree1Str1= "f(d(a c(b))e)";
         String tree1Str2= "f(c(d(a b))e)";
         String tree1Str3= "f(c d a(b c))";
 
-        Node treeFromString= new Node();
-        treeFromString= treeFromString.parseTree(tree1Str3);
-        System.out.println(treeFromString.printTree());
+        Node tree1= new Node();
+        tree1= tree1.parseTree(tree1Str3);
+
+        System.out.println(tree1.printTree());
 
     }
 
