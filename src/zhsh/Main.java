@@ -17,14 +17,18 @@ public class Main {
         String tree1Str3= "f(c d a(b c))";
 
         Node tree1= new Node();
-        tree1= tree1.parseTree(tree1Str3);
+        tree1= tree1.parseTree(tree1Str1);
+
+        Node tree2= new Node();
+        tree2= tree2.parseTree(tree1Str2);
 
         System.out.println(tree1.printTree());
+        System.out.println(tree2.printTree());
 
     }
 
-/*    private int ZhangShasha(Tree tree1, Tree tree2){
+    private int ZhangShasha(Node tree1, Node tree2){
 
         return 1;
-    }*/
+    }
 }

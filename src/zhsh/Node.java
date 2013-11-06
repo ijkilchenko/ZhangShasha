@@ -30,7 +30,7 @@ public class Node {
         return result;
     }
 
-    public Node(StreamTokenizer tokenizer) throws IOException{
+    private Node(StreamTokenizer tokenizer) throws IOException{
         if (tokenizer.ttype != StreamTokenizer.TT_WORD){
             throw new RuntimeException("Identifier expected; got: " + tokenizer.ttype);
         }
@@ -56,6 +56,7 @@ public class Node {
         for (int i= 0; i < currentRoot.children.size(); i++){
             currentString= printTree(currentRoot.children.get(i), currentString);
         }
+        //currentString.append(currentRoot.label + " "); //Uncomment for postorder.
         return currentString;
     }
 }
