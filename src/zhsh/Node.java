@@ -14,6 +14,7 @@ public class Node {
     private ArrayList<Node> children= new ArrayList<Node>();
 
     public Node(){
+
     }
 
     public Node(String label){
@@ -58,5 +59,22 @@ public class Node {
         }
         //currentString.append(currentRoot.label + " "); //Uncomment for postorder.
         return currentString;
+    }
+
+    public Object[] l(){
+        ArrayList<String> l= new ArrayList<String>();
+        l= l(this, l);
+        return l.toArray();
+    }
+
+    private ArrayList<String> l(Node currentRoot, ArrayList<String> l){
+        for (int i= 0; i < currentRoot.children.size(); i++){
+            l= l(currentRoot.children.get(i), l);
+        }
+        while(currentRoot.children.size() != 0){
+            currentRoot= currentRoot.children.get(0);
+        }
+        l.add(currentRoot.label);
+        return l;
     }
 }

@@ -23,7 +23,9 @@ public class Main {
         tree2= tree2.parseTree(tree1Str2);
 
         System.out.println(tree1.printTree());
+        System.out.println(tree1.l());
         System.out.println(tree2.printTree());
+        System.out.println(tree2.l());
 
     }
 
