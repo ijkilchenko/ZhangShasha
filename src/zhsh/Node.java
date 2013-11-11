@@ -13,6 +13,7 @@ public class Node {
     private String label;
     private int pIndex;
     private ArrayList<Node> children= new ArrayList<Node>();
+    private Node left;
     ArrayList<Integer> l= new ArrayList<Integer>();
     ArrayList<Integer> LRkeyroots= new ArrayList<Integer>();
 
@@ -78,6 +79,22 @@ public class Node {
         }
         l.add(currentRoot.pIndex);
         return l;
+    }
+
+    public static void left(Node currentNode){
+        if (currentNode == null) return;
+
+        for (int i= 0; i < currentNode.children.size(); i++){
+            left(currentNode.children.get(i));
+        }
+
+        if (currentNode.children.size() == 0){
+            currentNode.left= currentNode;
+        }
+        else {
+            currentNode.left= currentNode.children.get(0).left;
+        }
+
     }
 
     public Object[] LRkeyroots(){

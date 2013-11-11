@@ -26,6 +26,7 @@ public class Main {
         System.out.println(tree1.l());
         tree1.LRkeyroots();
         System.out.println(tree1.LRkeyroots.toArray().toString());
+        tree1.left(tree1);
         System.out.println(tree2.printTree());
         System.out.println(tree2.l());
         tree2.LRkeyroots();
