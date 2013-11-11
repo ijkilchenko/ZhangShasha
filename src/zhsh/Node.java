@@ -14,7 +14,7 @@ public class Node {
     private int pIndex;
     private ArrayList<Node> children= new ArrayList<Node>();
     ArrayList<Integer> l= new ArrayList<Integer>();
-    ArrayList<String> LR_keyroots= new ArrayList<String>();
+    ArrayList<Integer> LRkeyroots= new ArrayList<Integer>();
 
     public Node(){
 
@@ -49,31 +49,16 @@ public class Node {
         }
     }
 
-    public String printTree(){
-        indexTree();
-        StringBuffer treeString= new StringBuffer();
+    private String printTree(){
+        ArrayList<String> treeString= new ArrayList<String>();
         treeString= printTree(this, treeString);
-        return treeString.toString();
+        return treeString.toArray().toString();
     }
 
-    private static StringBuffer printTree(Node currentRoot, StringBuffer currentString){
+    private ArrayList<String> printTree(Node currentRoot, ArrayList<String> currentString){
         //currentString.append(currentRoot.label + " ");
         for (int i= 0; i < currentRoot.children.size(); i++){
             currentString= printTree(currentRoot.children.get(i), currentString);
-        }
-        currentString.append(currentRoot.pIndex + " "); //Uncomment for postorder.
-        return currentString;
-    }
-
-    private void indexTree(){
-        ArrayList<String> treeString= new ArrayList<String>();
-        treeString= indexTree(this, treeString);
-    }
-
-    private ArrayList<String> indexTree(Node currentRoot, ArrayList<String> currentString){
-        //currentString.append(currentRoot.label + " ");
-        for (int i= 0; i < currentRoot.children.size(); i++){
-            currentString= indexTree(currentRoot.children.get(i), currentString);
         }
         currentString.add(currentRoot.label); //Uncomment for postorder.
         currentRoot.pIndex= currentString.size();
@@ -96,18 +81,18 @@ public class Node {
         return l;
     }
 
-//    public Object[] LR_keyroots(){
-//        this.LR_keyroots= LR_keyroots(this, LR_keyroots);
-//        for (int i= 0; i < LR_keyroots.size(); i++){
-//            int currentLeft= l.get(i);
-//            for (int j= i; j < LR_keyroots.size(); j++){
-//                if
-//            }
-//        }
-//        return LR_keyroots.toArray();
-//    }
-//
-//    private static ArrayList<String> LR_keyroots(Node currentRoot, ArrayList<String> LR_keyroots){
-//
-//    }
+    public Object[] LRkeyroots(){
+        for (int i= 0; i < l.size(); i++){
+            int flag= 0;
+            for (int j= i+1; j < l.size()-1; j++){
+                if (l.get(j) == l.get(i)){
+                    flag= 1;
+                }
+            }
+            if (flag == 0){
+                this.LRkeyroots.add(i);
+            }
+        }
+        return LRkeyroots.toArray();
+    }
 }
