@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87573c71-2e1a-49c9-812d-6e05c473c3c5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zhsh/Node.java" afterPath="$PROJECT_DIR$/src/zhsh/Node.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ZhangShasha.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1383931946483" ignored="false" />
+    <file path="/Dummy.txt" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384133649118" ignored="false" />
     <file path="/ActionScript File Header.txt.ft" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1382779280551" ignored="false" />
-    <file path="/Node.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1383933228348" ignored="false" />
+    <file path="/Node.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384138039145" ignored="false" />
     <file path="/File Header.txt.ft" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1382779494885" ignored="false" />
     <file path="/Tree.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1383600439034" ignored="false" />
     <file path="/Main.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1383933125707" ignored="false" />
@@ -30,6 +31,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -67,7 +69,6 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -77,31 +78,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="107" selection-start="209" selection-end="209" vertical-scroll-proportion="0.21929824">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zhsh/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="42" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
+            <state line="24" column="47" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Node.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Node.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/zhsh/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="28" selection-start="1749" selection-end="1749" vertical-scroll-proportion="0.0">
+            <state line="78" column="49" selection-start="2788" selection-end="2788" vertical-scroll-proportion="0.3488372">
               <folding>
-                <element signature="e#269#275#0" expanded="true" />
-                <element signature="e#2118#2126#0" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#401#409#0" expanded="true" />
+                <element signature="e#2295#2303#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,16 +122,15 @@
         <option value="$PROJECT_DIR$/src/Tree.java" />
         <option value="$PROJECT_DIR$/src/zhsh/Tree.java" />
         <option value="$PROJECT_DIR$/src/zhsh/Main.java" />
-        <option value="$PROJECT_DIR$/src/zhsh/Node.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/zhsh/Node.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="-4" />
-    <option name="width" value="1368" />
-    <option name="height" value="773" />
+    <option name="y" value="24" />
+    <option name="width" value="1366" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -190,7 +182,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -230,6 +221,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -244,9 +236,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
@@ -323,7 +315,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
+    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -331,7 +323,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3990307" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990307" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -344,12 +336,12 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24924012" sideWeight="0.6009693" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24924012" sideWeight="0.6736672" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3263328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -429,8 +421,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="22" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#269#275#0" expanded="true" />
-            <element signature="e#2118#2126#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#401#409#0" expanded="true" />
+            <element signature="e#2295#2303#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -446,8 +439,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="61" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#269#275#0" expanded="true" />
-            <element signature="e#2118#2126#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#401#409#0" expanded="true" />
+            <element signature="e#2295#2303#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -463,8 +457,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="49" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#269#275#0" expanded="true" />
-            <element signature="e#2118#2126#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#401#409#0" expanded="true" />
+            <element signature="e#2295#2303#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -480,8 +475,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#269#275#0" expanded="true" />
-            <element signature="e#2118#2126#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#401#409#0" expanded="true" />
+            <element signature="e#2295#2303#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -497,8 +493,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#269#275#0" expanded="true" />
-            <element signature="e#2118#2126#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#401#409#0" expanded="true" />
+            <element signature="e#2295#2303#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -514,8 +511,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#269#275#0" expanded="true" />
-            <element signature="e#2118#2126#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#401#409#0" expanded="true" />
+            <element signature="e#2295#2303#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -525,27 +523,28 @@
         <state line="657" column="0" selection-start="24186" selection-end="24186" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="348" selection-end="348" vertical-scroll-proportion="0.4385965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/zhsh/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="42" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
+        <state line="24" column="47" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zhsh/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="28" selection-start="1749" selection-end="1749" vertical-scroll-proportion="0.0">
+        <state line="78" column="49" selection-start="2788" selection-end="2788" vertical-scroll-proportion="0.3488372">
           <folding>
-            <element signature="e#269#275#0" expanded="true" />
-            <element signature="e#2118#2126#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#401#409#0" expanded="true" />
+            <element signature="e#2295#2303#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="107" selection-start="209" selection-end="209" vertical-scroll-proportion="0.21929824">
-          <folding />
         </state>
       </provider>
     </entry>
