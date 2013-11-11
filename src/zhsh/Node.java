@@ -56,11 +56,10 @@ public class Node {
     }
 
     private ArrayList<String> printTree(Node currentRoot, ArrayList<String> currentString){
-        //currentString.append(currentRoot.label + " ");
         for (int i= 0; i < currentRoot.children.size(); i++){
             currentString= printTree(currentRoot.children.get(i), currentString);
         }
-        currentString.add(currentRoot.label); //Uncomment for postorder.
+        currentString.add(currentRoot.label);
         currentRoot.pIndex= currentString.size();
         return currentString;
     }
