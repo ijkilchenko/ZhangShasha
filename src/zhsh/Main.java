@@ -24,10 +24,12 @@ public class Main {
 
         System.out.println(tree1.printTree());
         System.out.println(tree1.l());
-        System.out.println(tree1.LRkeyroots());
+        tree1.LRkeyroots();
+        System.out.println(tree1.LRkeyroots.toArray().toString());
         System.out.println(tree2.printTree());
         System.out.println(tree2.l());
-        System.out.println(tree2.LRkeyroots());
+        tree2.LRkeyroots();
+        System.out.println(tree2.LRkeyroots.toArray().toString());
 
     }
 

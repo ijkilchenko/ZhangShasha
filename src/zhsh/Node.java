@@ -49,7 +49,7 @@ public class Node {
         }
     }
 
-    private String printTree(){
+    public String printTree(){
         ArrayList<String> treeString= new ArrayList<String>();
         treeString= printTree(this, treeString);
         return treeString.toArray().toString();
@@ -84,13 +84,13 @@ public class Node {
     public Object[] LRkeyroots(){
         for (int i= 0; i < l.size(); i++){
             int flag= 0;
-            for (int j= i+1; j < l.size()-1; j++){
+            for (int j= i+1; j < l.size(); j++){
                 if (l.get(j) == l.get(i)){
                     flag= 1;
                 }
             }
             if (flag == 0){
-                this.LRkeyroots.add(i);
+                this.LRkeyroots.add(i+1);
             }
         }
         return LRkeyroots.toArray();

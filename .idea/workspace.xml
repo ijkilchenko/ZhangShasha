@@ -9,10 +9,10 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384133649118" ignored="false" />
     <file path="/ActionScript File Header.txt.ft" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1382779280551" ignored="false" />
-    <file path="/Node.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384139277795" ignored="false" />
+    <file path="/Node.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384139597554" ignored="false" />
     <file path="/File Header.txt.ft" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1382779494885" ignored="false" />
     <file path="/Tree.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1383600439034" ignored="false" />
-    <file path="/Main.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384138701715" ignored="false" />
+    <file path="/Main.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384140075467" ignored="false" />
     <file path="/fragment.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1383710389674" ignored="false" />
     <file path="/a.dummy" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1383710138134" ignored="false" />
     <file path="/README.md" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1383936215640" ignored="false" />
@@ -68,22 +68,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/zhsh/Node.java" line="91" class="zhsh.Node" package="zhsh">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/zhsh/Node.java" line="84" class="zhsh.Node" package="zhsh">
+      <breakpoint url="file://$PROJECT_DIR$/src/zhsh/Node.java" line="95" class="zhsh.Node" package="zhsh">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -111,7 +96,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zhsh/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="35" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0">
+            <state line="31" column="66" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -120,12 +105,12 @@
       <file leaf-file-name="Node.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/zhsh/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="0" selection-start="1598" selection-end="1598" vertical-scroll-proportion="0.12280702">
+            <state line="63" column="49" selection-start="2221" selection-end="2221" vertical-scroll-proportion="0.42982456">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#342#351#0" expanded="true" />
                 <element signature="e#403#412#0" expanded="true" />
-                <element signature="e#1681#1689#0" expanded="true" />
+                <element signature="e#1680#1688#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -153,8 +138,8 @@
         <option value="$PROJECT_DIR$/src/Tree.java" />
         <option value="$PROJECT_DIR$/src/zhsh/Tree.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/zhsh/Main.java" />
         <option value="$PROJECT_DIR$/src/zhsh/Node.java" />
+        <option value="$PROJECT_DIR$/src/zhsh/Main.java" />
       </list>
     </option>
   </component>
@@ -455,7 +440,7 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#342#351#0" expanded="true" />
             <element signature="e#403#412#0" expanded="true" />
-            <element signature="e#1681#1689#0" expanded="true" />
+            <element signature="e#1680#1688#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -474,7 +459,7 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#342#351#0" expanded="true" />
             <element signature="e#403#412#0" expanded="true" />
-            <element signature="e#1681#1689#0" expanded="true" />
+            <element signature="e#1680#1688#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -493,7 +478,7 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#342#351#0" expanded="true" />
             <element signature="e#403#412#0" expanded="true" />
-            <element signature="e#1681#1689#0" expanded="true" />
+            <element signature="e#1680#1688#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -512,7 +497,7 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#342#351#0" expanded="true" />
             <element signature="e#403#412#0" expanded="true" />
-            <element signature="e#1681#1689#0" expanded="true" />
+            <element signature="e#1680#1688#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -531,7 +516,7 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#342#351#0" expanded="true" />
             <element signature="e#403#412#0" expanded="true" />
-            <element signature="e#1681#1689#0" expanded="true" />
+            <element signature="e#1680#1688#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -550,7 +535,7 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#342#351#0" expanded="true" />
             <element signature="e#403#412#0" expanded="true" />
-            <element signature="e#1681#1689#0" expanded="true" />
+            <element signature="e#1680#1688#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -569,19 +554,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zhsh/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="35" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0">
+        <state line="31" column="66" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zhsh/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1598" selection-end="1598" vertical-scroll-proportion="0.12280702">
+        <state line="63" column="49" selection-start="2221" selection-end="2221" vertical-scroll-proportion="0.42982456">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#342#351#0" expanded="true" />
             <element signature="e#403#412#0" expanded="true" />
-            <element signature="e#1681#1689#0" expanded="true" />
+            <element signature="e#1680#1688#0" expanded="true" />
           </folding>
         </state>
       </provider>
