@@ -13,7 +13,7 @@ public class Node {
     private String label;
     private int pIndex;
     private ArrayList<Node> children= new ArrayList<Node>();
-    ArrayList<String> l= new ArrayList<String>();
+    ArrayList<Integer> l= new ArrayList<Integer>();
     ArrayList<String> LR_keyroots= new ArrayList<String>();
 
     public Node(){
@@ -85,14 +85,14 @@ public class Node {
         return l.toArray();
     }
 
-    private static ArrayList<String> l(Node currentRoot, ArrayList<String> l){
+    private static ArrayList<Integer> l(Node currentRoot, ArrayList<Integer> l){
         for (int i= 0; i < currentRoot.children.size(); i++){
             l= l(currentRoot.children.get(i), l);
         }
         while(currentRoot.children.size() != 0){
             currentRoot= currentRoot.children.get(0);
         }
-        l.add(currentRoot.label);
+        l.add(currentRoot.pIndex);
         return l;
     }
 
