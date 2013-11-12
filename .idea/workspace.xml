@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="87573c71-2e1a-49c9-812d-6e05c473c3c5" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/#.gitignore#" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zhsh/Node.java" afterPath="$PROJECT_DIR$/src/zhsh/Node.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zhsh/Main.java" afterPath="$PROJECT_DIR$/src/zhsh/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zhsh/Tree.java" afterPath="$PROJECT_DIR$/src/zhsh/Tree.java" />
     </list>
     <ignored path="ZhangShasha.iws" />
@@ -78,19 +78,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/zhsh/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
+            <state line="16" column="40" selection-start="418" selection-end="418" vertical-scroll-proportion="0.5701754">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tree.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Tree.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zhsh/Tree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="27" selection-start="130" selection-end="130" vertical-scroll-proportion="0.1754386">
+            <state line="96" column="13" selection-start="2847" selection-end="2847" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#256#265#0" expanded="true" />
@@ -103,7 +103,7 @@
       <file leaf-file-name="Node.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zhsh/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="19" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
+            <state line="12" column="19" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#198#204#0" expanded="true" />
               </folding>
@@ -141,9 +141,9 @@
         <option value="$PROJECT_DIR$/src/Node.java" />
         <option value="$PROJECT_DIR$/src/Tree.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/zhsh/Main.java" />
-        <option value="$PROJECT_DIR$/src/zhsh/Tree.java" />
         <option value="$PROJECT_DIR$/src/zhsh/Node.java" />
+        <option value="$PROJECT_DIR$/src/zhsh/Tree.java" />
+        <option value="$PROJECT_DIR$/src/zhsh/Main.java" />
       </list>
     </option>
   </component>
@@ -531,16 +531,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zhsh/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/zhsh/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="19" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
+        <state line="12" column="19" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#198#204#0" expanded="true" />
           </folding>
@@ -549,12 +542,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zhsh/Tree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="130" selection-end="130" vertical-scroll-proportion="0.1754386">
+        <state line="96" column="13" selection-start="2847" selection-end="2847" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#256#265#0" expanded="true" />
             <element signature="e#315#324#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zhsh/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="40" selection-start="418" selection-end="418" vertical-scroll-proportion="0.5701754">
+          <folding />
         </state>
       </provider>
     </entry>

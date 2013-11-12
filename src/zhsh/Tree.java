@@ -1,12 +1,12 @@
+/**
+ * User: ijk
+ * Date: 11/12/13
+ */
 package zhsh;
 import java.io.IOException;
 import java.io.StreamTokenizer;
 import java.io.StringReader;
 import java.util.ArrayList;
-/**
- * User: ijk
- * Date: 11/12/13
- */
 public class Tree {
     Node root= new Node();
     ArrayList<Integer> l= new ArrayList<Integer>();

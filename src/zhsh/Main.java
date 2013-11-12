@@ -3,9 +3,7 @@
  * Date: 10/26/13
  */
 package zhsh;
-
 import java.io.IOException;
-
 public class Main {
 
     public static void main(String[] args) throws IOException{
@@ -17,22 +15,6 @@ public class Main {
         String tree1Str3= "f(c d a(b c))";
 
         Tree tree1= new Tree(tree1Str1);
-
-/*        Node tree1= new Node();
-        tree1= tree1.parseTree(tree1Str1);
-
-        Node tree2= new Node();
-        tree2= tree2.parseTree(tree1Str2);
-
-        System.out.println(tree1.printTree());
-        System.out.println(tree1.l());
-        tree1.LRkeyroots();
-        System.out.println(tree1.LRkeyroots.toArray().toString());
-        tree1.left(tree1);
-        System.out.println(tree2.printTree());
-        System.out.println(tree2.l());
-        tree2.LRkeyroots();
-        System.out.println(tree2.LRkeyroots.toArray().toString());*/
 
     }
 
