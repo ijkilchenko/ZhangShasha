@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87573c71-2e1a-49c9-812d-6e05c473c3c5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zhsh/Tree.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/#.gitignore#" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zhsh/Main.java" afterPath="$PROJECT_DIR$/src/zhsh/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zhsh/Node.java" afterPath="$PROJECT_DIR$/src/zhsh/Node.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zhsh/Tree.java" afterPath="$PROJECT_DIR$/src/zhsh/Tree.java" />
     </list>
     <ignored path="ZhangShasha.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384284991251" ignored="false" />
     <file path="/ActionScript File Header.txt.ft" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1382779280551" ignored="false" />
-    <file path="/Node.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384293772270" ignored="false" />
+    <file path="/Node.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384295259395" ignored="false" />
     <file path="/File Header.txt.ft" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1382779494885" ignored="false" />
-    <file path="/Tree.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384294373216" ignored="false" />
+    <file path="/Tree.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384296170404" ignored="false" />
     <file path="/Main.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384294309888" ignored="false" />
     <file path="/fragment.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1383710389674" ignored="false" />
     <file path="/a.dummy" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1383710138134" ignored="false" />
@@ -70,23 +68,7 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/zhsh/Main.java" line="18" class="zhsh.Main" package="zhsh">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -108,9 +90,11 @@
       <file leaf-file-name="Tree.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/zhsh/Tree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="5" selection-start="1336" selection-end="1336" vertical-scroll-proportion="1.5701754">
+            <state line="4" column="27" selection-start="130" selection-end="130" vertical-scroll-proportion="0.1754386">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#256#265#0" expanded="true" />
+                <element signature="e#315#324#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,11 +103,9 @@
       <file leaf-file-name="Node.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zhsh/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="4" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
+            <state line="6" column="19" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#293#299#0" expanded="true" />
-                <element signature="e#366#375#0" expanded="true" />
-                <element signature="e#427#436#0" expanded="true" />
+                <element signature="e#198#204#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,9 +141,9 @@
         <option value="$PROJECT_DIR$/src/Node.java" />
         <option value="$PROJECT_DIR$/src/Tree.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/zhsh/Node.java" />
         <option value="$PROJECT_DIR$/src/zhsh/Main.java" />
         <option value="$PROJECT_DIR$/src/zhsh/Tree.java" />
+        <option value="$PROJECT_DIR$/src/zhsh/Node.java" />
       </list>
     </option>
   </component>
@@ -452,9 +434,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="22" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#293#299#0" expanded="true" />
-            <element signature="e#366#375#0" expanded="true" />
-            <element signature="e#427#436#0" expanded="true" />
+            <element signature="e#198#204#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -470,9 +450,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="61" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#293#299#0" expanded="true" />
-            <element signature="e#366#375#0" expanded="true" />
-            <element signature="e#427#436#0" expanded="true" />
+            <element signature="e#198#204#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -488,9 +466,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="49" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#293#299#0" expanded="true" />
-            <element signature="e#366#375#0" expanded="true" />
-            <element signature="e#427#436#0" expanded="true" />
+            <element signature="e#198#204#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -506,9 +482,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#293#299#0" expanded="true" />
-            <element signature="e#366#375#0" expanded="true" />
-            <element signature="e#427#436#0" expanded="true" />
+            <element signature="e#198#204#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -524,9 +498,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#293#299#0" expanded="true" />
-            <element signature="e#366#375#0" expanded="true" />
-            <element signature="e#427#436#0" expanded="true" />
+            <element signature="e#198#204#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -542,9 +514,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#293#299#0" expanded="true" />
-            <element signature="e#366#375#0" expanded="true" />
-            <element signature="e#427#436#0" expanded="true" />
+            <element signature="e#198#204#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -561,17 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zhsh/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#293#299#0" expanded="true" />
-            <element signature="e#366#375#0" expanded="true" />
-            <element signature="e#427#436#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/zhsh/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
@@ -579,11 +538,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/zhsh/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="19" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#198#204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/zhsh/Tree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="5" selection-start="1336" selection-end="1336" vertical-scroll-proportion="1.5701754">
+        <state line="4" column="27" selection-start="130" selection-end="130" vertical-scroll-proportion="0.1754386">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#256#265#0" expanded="true" />
+            <element signature="e#315#324#0" expanded="true" />
           </folding>
         </state>
       </provider>
