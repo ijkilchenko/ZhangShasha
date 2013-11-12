@@ -16,7 +16,9 @@ public class Main {
         String tree1Str2= "f(c(d(a b))e)";
         String tree1Str3= "f(c d a(b c))";
 
-        Node tree1= new Node();
+        Tree tree1= new Tree(tree1Str1);
+
+/*        Node tree1= new Node();
         tree1= tree1.parseTree(tree1Str1);
 
         Node tree2= new Node();
@@ -30,7 +32,7 @@ public class Main {
         System.out.println(tree2.printTree());
         System.out.println(tree2.l());
         tree2.LRkeyroots();
-        System.out.println(tree2.LRkeyroots.toArray().toString());
+        System.out.println(tree2.LRkeyroots.toArray().toString());*/
 
     }
 

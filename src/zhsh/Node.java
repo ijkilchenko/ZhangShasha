@@ -10,9 +10,12 @@ import java.io.StringReader;
 import java.util.ArrayList;
 
 public class Node {
-    private String label;
+    public String label;
+
     private int pIndex;
-    private ArrayList<Node> children= new ArrayList<Node>();
+
+    public ArrayList<Node> children= new ArrayList<Node>();
+
     private Node left;
     ArrayList<Integer> l= new ArrayList<Integer>();
     ArrayList<Integer> LRkeyroots= new ArrayList<Integer>();
