@@ -19,10 +19,10 @@ public class Main {
         String tree1Str4= "f(a(b(c)))";
         String tree1Str5= "f(a(c(e)) b(d(f)))";
         String tree1Str6= "f";
-        String tree1Str7= "d(a)";
+        String tree1Str7= "f(a)";
 
-        Tree tree1= new Tree(tree1Str6);
-        Tree tree2= new Tree(tree1Str7);
+        Tree tree1= new Tree(tree1Str1);
+        Tree tree2= new Tree(tree1Str2);
 
         //TODO: Figure out what's wrong. I may be evaluating in the wrong order.
         int distance= ZhangShasha(tree1, tree2);
@@ -36,9 +36,11 @@ public class Main {
         tree1.index();
         tree1.l();
         tree1.keyroots();
+        tree1.traverse();
         tree2.index();
         tree2.l();
         tree2.keyroots();
+        tree2.traverse();
 
         ArrayList<Integer> l1= tree1.l;
         ArrayList<Integer> keyroots1= tree1.keyroots;
@@ -51,18 +53,19 @@ public class Main {
             for (int j1= 1; j1 < keyroots2.size()+1; j1++){
                 int i= keyroots1.get(i1-1);
                 int j= keyroots2.get(j1-1);
-                TD[i1][j1]= treedist(l1, l2, i, j);
+                TD[i1][j1]= treedist(l1, l2, i, j, tree1, tree2);
             }
         }
 
         return TD[keyroots1.size()][keyroots2.size()];
     }
 
-    private static int treedist(ArrayList<Integer> l1, ArrayList<Integer> l2, int i, int j){
+    private static int treedist(ArrayList<Integer> l1, ArrayList<Integer> l2, int i, int j, Tree tree1, Tree tree2){
         int[][] forestdist= new int[i+1][j+1];
 
         int Delete= 1;
         int Insert= 1;
+        int Relabel= 1;
 
         //The following two for-loops seem to work properly.
         forestdist[0][0]= 0;
@@ -75,8 +78,9 @@ public class Main {
         for (int i1= l1.get(i-1); i1 <= i; i1++){
             for (int j1= l2.get(j-1); j1 <= j; j1++){
                 if ((l1.get(i1-1) == l1.get(i-1)) && (l2.get(j1-1) == l2.get(j-1))){
+                    int Cost= (tree1.str.get(i1-1).equals(tree2.str.get(j1-1)))? 0: Relabel;
                     forestdist[i1][j1]= Math.min(Math.min(forestdist[i1-1][j1] + Delete, forestdist[i1][j1-1] + Insert),
-                            forestdist[i1-1][j1-1] + Delete);
+                            forestdist[i1-1][j1-1] + Cost);
                     TD[i1][j1]= forestdist[i1][j1];
                 }
                 else{
