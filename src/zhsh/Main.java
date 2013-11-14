@@ -61,25 +61,26 @@ public class Main {
     private static int treedist(ArrayList<Integer> l1, ArrayList<Integer> l2, int i, int j){
         int[][] forestdist= new int[i+1][j+1];
 
-        int Gamma= 1;
+        int Delete= 1;
+        int Insert= 1;
 
         //The following two for-loops seem to work properly.
         forestdist[0][0]= 0;
         for (int i1= l1.get(i-1); i1 <= i; i1++){
-            forestdist[i1][0]= forestdist[i1-1][0] + Gamma;
+            forestdist[i1][0]= forestdist[i1-1][0] + Delete;
         }
         for (int j1= l2.get(j-1); j1 <= j; j1++){
-            forestdist[0][j1]= forestdist[0][j1-1] + Gamma;
+            forestdist[0][j1]= forestdist[0][j1-1] + Insert;
         }
         for (int i1= l1.get(i-1); i1 <= i; i1++){
             for (int j1= l2.get(j-1); j1 <= j; j1++){
                 if ((l1.get(i1-1) == l1.get(i-1)) && (l2.get(j1-1) == l2.get(j-1))){
-                    forestdist[i1][j1]= Math.min(Math.min(forestdist[i1-1][j1] + Gamma, forestdist[i1][j1-1] + Gamma),
-                            forestdist[i1-1][j1-1] + Gamma);
+                    forestdist[i1][j1]= Math.min(Math.min(forestdist[i1-1][j1] + Delete, forestdist[i1][j1-1] + Insert),
+                            forestdist[i1-1][j1-1] + Delete);
                     TD[i1][j1]= forestdist[i1][j1];
                 }
                 else{
-                    forestdist[i1][j1]= Math.min(Math.min(forestdist[i1-1][j1] + Gamma, forestdist[i1][j1-1] + Gamma),
+                    forestdist[i1][j1]= Math.min(Math.min(forestdist[i1-1][j1] + Delete, forestdist[i1][j1-1] + Insert),
                             forestdist[i1-1][j1-1] + TD[i1][j1]);
                 }
             }

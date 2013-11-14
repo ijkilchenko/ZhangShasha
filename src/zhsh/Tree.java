@@ -11,6 +11,7 @@ public class Tree {
     Node root= new Node();
     ArrayList<Integer> l= new ArrayList<Integer>();
     ArrayList<Integer> keyroots= new ArrayList<Integer>();
+    ArrayList<String> str= new ArrayList<String>();
 
     public Tree(){
 
@@ -39,6 +40,18 @@ public class Tree {
             tokenizer.nextToken(); //Consume ')'.
         }
         return node;
+    }
+
+    public void traverse(){
+        traverse(root, str);
+    }
+
+    private static ArrayList<String> traverse(Node node, ArrayList<String> str){
+        for (int i= 0; i < node.children.size(); i++){
+            str= traverse(node.children.get(i), str);
+        }
+        str.add(node.label);
+        return str;
     }
 
     public void index(){

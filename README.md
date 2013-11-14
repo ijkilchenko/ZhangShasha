@@ -14,4 +14,7 @@ TODO
 
 2. Why doesn't the workspace.xml files get ignored by git?
 3. I need to learn how to test method properly (maybe do a JUnit tutorial again)...
+4. [Top] Refactor the Main class.
+5. [Top] Generalize the algorithm. Use Java generics, etc. 
+6. [Medium] Write a better README file. 
 
