@@ -16,8 +16,13 @@ public class Main {
         String tree1Str2= "f(c(d(a b))e)";
         String tree1Str3= "f(c d a(b c))";
 
-        Tree tree1= new Tree(tree1Str1);
-        Tree tree2= new Tree(tree1Str2);
+        String tree1Str4= "f(a(b(c)))";
+        String tree1Str5= "f(a(c(e)) b(d(f)))";
+        String tree1Str6= "f";
+        String tree1Str7= "d(a)";
+
+        Tree tree1= new Tree(tree1Str6);
+        Tree tree2= new Tree(tree1Str7);
 
         //TODO: Figure out what's wrong. I may be evaluating in the wrong order.
         int distance= ZhangShasha(tree1, tree2);

@@ -8,12 +8,12 @@
     </list>
     <ignored path="ZhangShasha.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384398457408" ignored="false" />
+    <file path="/Dummy.txt" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384457512439" ignored="false" />
     <file path="/ActionScript File Header.txt.ft" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1382779280551" ignored="false" />
     <file path="/Node.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384295259395" ignored="false" />
     <file path="/File Header.txt.ft" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1382779494885" ignored="false" />
     <file path="/Tree.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384296170404" ignored="false" />
-    <file path="/Main.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384407489258" ignored="false" />
+    <file path="/Main.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384458583441" ignored="false" />
     <file path="/fragment.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384407360006" ignored="false" />
     <file path="/a.dummy" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1383710138134" ignored="false" />
     <file path="/README.md" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384297349361" ignored="false" />
@@ -31,6 +31,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -68,7 +69,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/zhsh/Main.java" line="70" class="zhsh.Main" package="zhsh">
+      <breakpoint url="file://$PROJECT_DIR$/src/zhsh/Main.java" line="53" class="zhsh.Main" package="zhsh">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -80,11 +81,10 @@
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="j1==4&#13;&#13;JAVA" />
-        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -97,7 +97,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/zhsh/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="61" selection-start="1692" selection-end="1692" vertical-scroll-proportion="0.51692307">
+            <state line="28" column="37" selection-start="811" selection-end="811" vertical-scroll-proportion="0.71907216">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -151,10 +151,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="52" />
-    <option name="width" value="1364" />
-    <option name="height" value="715" />
+    <option name="x" value="-1" />
+    <option name="y" value="-4" />
+    <option name="width" value="1368" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -339,7 +339,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="52" width="1364" height="715" extended-state="6" />
+    <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -347,7 +347,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3983051" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3974152" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -360,8 +360,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24657534" sideWeight="0.60169494" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32542372" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2462006" sideWeight="0.6752827" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32471728" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -547,7 +547,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zhsh/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="61" selection-start="1692" selection-end="1692" vertical-scroll-proportion="0.51692307">
+        <state line="28" column="37" selection-start="811" selection-end="811" vertical-scroll-proportion="0.71907216">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
