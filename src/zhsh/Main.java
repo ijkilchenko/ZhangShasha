@@ -19,6 +19,7 @@ public class Main {
         Tree tree1= new Tree(tree1Str1);
         Tree tree2= new Tree(tree1Str2);
 
+        //TODO: Figure out what's wrong. I may be evaluating in the wrong order.
         int distance= ZhangShasha(tree1, tree2);
         System.out.println(distance);
 
@@ -57,6 +58,7 @@ public class Main {
 
         int Gamma= 1;
 
+        //The following two for-loops seem to work properly.
         forestdist[0][0]= 0;
         for (int i1= l1.get(i-1); i1 <= i; i1++){
             forestdist[i1][0]= forestdist[i1-1][0] + Gamma;
