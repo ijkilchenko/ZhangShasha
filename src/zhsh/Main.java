@@ -5,9 +5,7 @@
 package zhsh;
 import java.io.IOException;
 import java.util.ArrayList;
-
 public class Main {
-
     public static void main(String[] args) throws IOException{
         System.out.println("Hello World!");
 
@@ -24,7 +22,6 @@ public class Main {
         Tree tree1= new Tree(tree1Str1);
         Tree tree2= new Tree(tree1Str2);
 
-        //TODO: Figure out what's wrong. I may be evaluating in the wrong order.
         int distance= ZhangShasha(tree1, tree2);
         System.out.println(distance);
 
