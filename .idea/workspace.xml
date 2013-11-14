@@ -4,7 +4,6 @@
     <list default="true" id="87573c71-2e1a-49c9-812d-6e05c473c3c5" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/#.gitignore#" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zhsh/Main.java" afterPath="$PROJECT_DIR$/src/zhsh/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ZhangShasha.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -14,7 +13,7 @@
     <file path="/File Header.txt.ft" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1382779494885" ignored="false" />
     <file path="/Tree.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384296170404" ignored="false" />
     <file path="/Main.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384402971714" ignored="false" />
-    <file path="/fragment.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384402615816" ignored="false" />
+    <file path="/fragment.java" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384405767158" ignored="false" />
     <file path="/a.dummy" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1383710138134" ignored="false" />
     <file path="/README.md" changelist="87573c71-2e1a-49c9-812d-6e05c473c3c5" time="1384297349361" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -68,7 +67,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/zhsh/Main.java" line="47" class="zhsh.Main" package="zhsh">
+      <breakpoint url="file://$PROJECT_DIR$/src/zhsh/Main.java" line="51" class="zhsh.Main" package="zhsh">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -82,6 +81,21 @@
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/zhsh/Main.java" line="68" class="zhsh.Main" package="zhsh">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="i==3 &amp;&amp; j == 5&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
     </line_breakpoints>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
@@ -97,7 +111,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/zhsh/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="51" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.44615385">
+            <state line="68" column="47" selection-start="1971" selection-end="1971" vertical-scroll-proportion="0.47076923">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -547,7 +561,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zhsh/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="51" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.44615385">
+        <state line="68" column="47" selection-start="1971" selection-end="1971" vertical-scroll-proportion="0.47076923">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

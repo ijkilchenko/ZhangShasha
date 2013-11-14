@@ -66,7 +66,7 @@ public class Main {
         }
         for (int i1= l1.get(i-1); i1 <= i; i1++){
             for (int j1= l2.get(j-1); j1 <= j; j1++){
-                if (l1.get(i1-1) == l1.get(i-1) && l2.get(j1-1) == l1.get(j-1)){
+                if ((l1.get(i1-1) == l1.get(i-1)) && (l2.get(j1-1) == l2.get(j-1))){
                     forestdist[i1][j1]= Math.min(Math.min(forestdist[i1-1][j1] + Gamma, forestdist[i1][j1-1] + Gamma),
                             forestdist[i1-1][j1-1] + Gamma);
                     TD[i1][j1]= forestdist[i1][j1];
