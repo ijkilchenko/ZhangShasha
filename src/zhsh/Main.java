@@ -7,86 +7,18 @@ import java.io.IOException;
 import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) throws IOException{
-        System.out.println("Hello World!");
+        System.out.println("Hello to ZhangShasha!");
 
         //Sample trees (in preorder).
-        String tree1Str1= "f(d(a c(b))e)";
-        String tree1Str2= "f(c(d(a b))e)";
-        String tree1Str3= "f(c d a(b c))";
-
-        String tree1Str4= "f(a(b(c)))";
-        String tree1Str5= "f(a(c(e)) b(d(f)))";
-        String tree1Str6= "f";
-        String tree1Str7= "f(a)";
+        String tree1Str1= "f(d(a c(b)) e)";
+        String tree1Str2= "f(c(d(a b)) e)";
 
         Tree tree1= new Tree(tree1Str1);
         Tree tree2= new Tree(tree1Str2);
 
-        int distance= ZhangShasha(tree1, tree2);
+        int distance= Tree.ZhangShasha(tree1, tree2);
         System.out.println(distance);
 
     }
 
-    static int[][] TD;
-
-    private static int ZhangShasha(Tree tree1, Tree tree2){
-        tree1.index();
-        tree1.l();
-        tree1.keyroots();
-        tree1.traverse();
-        tree2.index();
-        tree2.l();
-        tree2.keyroots();
-        tree2.traverse();
-
-        ArrayList<Integer> l1= tree1.l;
-        ArrayList<Integer> keyroots1= tree1.keyroots;
-        ArrayList<Integer> l2= tree2.l;
-        ArrayList<Integer> keyroots2= tree2.keyroots;
-
-        TD = new int[l1.size()+1][l2.size()+1];
-
-        for (int i1= 1; i1 < keyroots1.size()+1; i1++){
-            for (int j1= 1; j1 < keyroots2.size()+1; j1++){
-                int i= keyroots1.get(i1-1);
-                int j= keyroots2.get(j1-1);
-                TD[i1][j1]= treedist(l1, l2, i, j, tree1, tree2);
-            }
-        }
-
-        return TD[keyroots1.size()][keyroots2.size()];
-    }
-
-    private static int treedist(ArrayList<Integer> l1, ArrayList<Integer> l2, int i, int j, Tree tree1, Tree tree2){
-        int[][] forestdist= new int[i+1][j+1];
-
-        int Delete= 1;
-        int Insert= 1;
-        int Relabel= 1;
-
-        //The following two for-loops seem to work properly.
-        forestdist[0][0]= 0;
-        for (int i1= l1.get(i-1); i1 <= i; i1++){
-            forestdist[i1][0]= forestdist[i1-1][0] + Delete;
-        }
-        for (int j1= l2.get(j-1); j1 <= j; j1++){
-            forestdist[0][j1]= forestdist[0][j1-1] + Insert;
-        }
-        for (int i1= l1.get(i-1); i1 <= i; i1++){
-            for (int j1= l2.get(j-1); j1 <= j; j1++){
-                if ((l1.get(i1-1) == l1.get(i-1)) && (l2.get(j1-1) == l2.get(j-1))){
-                    int Cost= (tree1.str.get(i1-1).equals(tree2.str.get(j1-1)))? 0: Relabel;
-                    forestdist[i1][j1]= Math.min(Math.min(forestdist[i1-1][j1] + Delete, forestdist[i1][j1-1] + Insert),
-                            forestdist[i1-1][j1-1] + Cost);
-                    TD[i1][j1]= forestdist[i1][j1];
-                }
-                else{
-                    forestdist[i1][j1]= Math.min(Math.min(forestdist[i1-1][j1] + Delete, forestdist[i1][j1-1] + Insert),
-                            forestdist[i1-1][j1-1] + TD[i1][j1]);
-                }
-            }
-        }
-
-        return forestdist[i][j];
-    }
 }
