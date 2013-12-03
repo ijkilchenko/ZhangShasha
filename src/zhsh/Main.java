@@ -4,7 +4,6 @@
  */
 package zhsh;
 import java.io.IOException;
-import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) throws IOException{
         System.out.println("Hello to ZhangShasha!");
@@ -20,5 +19,4 @@ public class Main {
         System.out.println(distance);
 
     }
-
 }

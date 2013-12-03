@@ -148,7 +148,6 @@ public class Tree {
         int Insert= 1;
         int Relabel= 1;
 
-        //The following two for-loops seem to work properly.
         forestdist[0][0]= 0;
         for (int i1= l1.get(i-1); i1 <= i; i1++){
             forestdist[i1][0]= forestdist[i1-1][0] + Delete;
