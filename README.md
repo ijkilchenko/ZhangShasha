@@ -13,8 +13,8 @@ Parenthesized strings such as "f(d(a c(b))e)" which represent trees in preorder 
 TODO
 ====
 
-1. [LOW] Why doesn't the workspace.xml file get ignored by git? 
-2. [HIGH] Generalize the Node class. Use Java generics. 
-3. [HIGH] Write a better README file.
-4. [HIGH] There might be bugs associated with cost of relabel.  
+1. [MED] Generalize the Node class. Use Java generics. 
+2. [MED] Write a better README file.
+3. [HIGH] There might be bugs associated with cost of relabel.
+4. [LOW] I have traverse(), index(), and l() methods which all traverse the tree making ArrayList variables which are later used. Consider making just one method which traverses the tree making all ArrayList variables at once. 
 

@@ -11,7 +11,7 @@ public class Tree {
     Node root= new Node();
     ArrayList<Integer> l= new ArrayList<Integer>();
     ArrayList<Integer> keyroots= new ArrayList<Integer>();
-    ArrayList<String> str= new ArrayList<String>();
+    ArrayList<String> labels= new ArrayList<String>();
 
     public Tree(){
 
@@ -43,15 +43,15 @@ public class Tree {
     }
 
     public void traverse(){
-        traverse(root, str);
+        traverse(root, labels);
     }
 
-    private static ArrayList<String> traverse(Node node, ArrayList<String> str){
+    private static ArrayList<String> traverse(Node node, ArrayList<String> labels){
         for (int i= 0; i < node.children.size(); i++){
-            str= traverse(node.children.get(i), str);
+            labels= traverse(node.children.get(i), labels);
         }
-        str.add(node.label);
-        return str;
+        labels.add(node.label);
+        return labels;
     }
 
     public void index(){
@@ -84,7 +84,7 @@ public class Tree {
         leftmost(root);
     }
 
-    public static void leftmost(Node node){
+    private static void leftmost(Node node){
         if (node == null) return;
         for (int i= 0; i < node.children.size(); i++){
             leftmost(node.children.get(i));
@@ -158,7 +158,7 @@ public class Tree {
         for (int i1= l1.get(i-1); i1 <= i; i1++){
             for (int j1= l2.get(j-1); j1 <= j; j1++){
                 if ((l1.get(i1-1) == l1.get(i-1)) && (l2.get(j1-1) == l2.get(j-1))){
-                    int Cost= (tree1.str.get(i1-1).equals(tree2.str.get(j1-1)))? 0: Relabel;
+                    int Cost= (tree1.labels.get(i1-1).equals(tree2.labels.get(j1-1)))? 0: Relabel;
                     forestdist[i1][j1]= Math.min(Math.min(forestdist[i1-1][j1] + Delete, forestdist[i1][j1-1] + Insert),
                             forestdist[i1-1][j1-1] + Cost);
                     TD[i1][j1]= forestdist[i1][j1];
