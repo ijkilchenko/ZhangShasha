@@ -15,5 +15,6 @@ TODO
 
 1. [LOW] Why doesn't the workspace.xml file get ignored by git? 
 2. [HIGH] Generalize the Node class. Use Java generics. 
-3. [HIGH] Write a better README file. 
+3. [HIGH] Write a better README file.
+4. [HIGH] There might be bugs associated with cost of relabel.  
 
