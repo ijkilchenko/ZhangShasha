@@ -134,11 +134,11 @@ public class Tree {
             for (int j1= 1; j1 < keyroots2.size()+1; j1++){
                 int i= keyroots1.get(i1-1);
                 int j= keyroots2.get(j1-1);
-                TD[i1][j1]= treedist(l1, l2, i, j, tree1, tree2);
+                TD[i][j]= treedist(l1, l2, i, j, tree1, tree2);
             }
         }
 
-        return TD[keyroots1.size()][keyroots2.size()];
+        return TD[l1.size()][l2.size()];
     }
 
     private static int treedist(ArrayList<Integer> l1, ArrayList<Integer> l2, int i, int j, Tree tree1, Tree tree2){
@@ -157,15 +157,17 @@ public class Tree {
         }
         for (int i1= l1.get(i-1); i1 <= i; i1++){
             for (int j1= l2.get(j-1); j1 <= j; j1++){
+                int i_temp= (l1.get(i-1) > i1-1)? 0: i1-1; //TODO: Changed >= to >.
+                int j_temp= (l2.get(j-1) > j1-1)? 0: j1-1;
                 if ((l1.get(i1-1) == l1.get(i-1)) && (l2.get(j1-1) == l2.get(j-1))){
                     int Cost= (tree1.labels.get(i1-1).equals(tree2.labels.get(j1-1)))? 0: Relabel;
-                    forestdist[i1][j1]= Math.min(Math.min(forestdist[i1-1][j1] + Delete, forestdist[i1][j1-1] + Insert),
-                            forestdist[i1-1][j1-1] + Cost);
+                    forestdist[i1][j1]= Math.min(Math.min(forestdist[i_temp][j1] + Delete, forestdist[i1][j_temp] + Insert),
+                            forestdist[i_temp][j_temp] + Cost);
                     TD[i1][j1]= forestdist[i1][j1];
                 }
                 else{
-                    forestdist[i1][j1]= Math.min(Math.min(forestdist[i1-1][j1] + Delete, forestdist[i1][j1-1] + Insert),
-                            forestdist[i1-1][j1-1] + TD[i1][j1]);
+                    forestdist[i1][j1]= Math.min(Math.min(forestdist[i_temp][j1] + Delete, forestdist[i1][j_temp] + Insert),
+                            forestdist[i_temp][j_temp] + TD[i1][j1]);
                 }
             }
         }
