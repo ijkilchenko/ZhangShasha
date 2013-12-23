@@ -15,6 +15,6 @@ TODO
 
 1. [MED] Generalize the Node class. Use Java generics. 
 2. [MED] Write a better README file.
-3. [HIGH] There might be bugs associated with cost of relabel.
+3. [HIGH] Fix bugs which occasionally overwrite forestdistances for some reason. 
 4. [LOW] I have traverse(), index(), and l() methods which all traverse the tree making ArrayList variables which are later used. Consider making just one method which traverses the tree making all ArrayList variables at once. 
 
