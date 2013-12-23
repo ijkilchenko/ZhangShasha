@@ -21,8 +21,8 @@ public class Main {
         String sen1= "S(NP(The sky) VP(is ADJP(blue)))";
         String sen2= "S(NP(The sky) VP(is ADJP(gray)))";
 
-        Tree tree1= new Tree(tree1Str3);
-        Tree tree2= new Tree(tree1Str4);
+        Tree tree1= new Tree(sen1);
+        Tree tree2= new Tree(sen2);
 
 //        Tree tree1= new Tree(sen1);
 //        Tree tree2= new Tree(sen2);
