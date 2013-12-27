@@ -36,4 +36,6 @@ TODO
         Consider making just one method which traverses the tree making all appropriate variables at once.
 4. [MED] Consider refactoring Tree and Node classes to make the algorithm more intuitive in terms of objects used.
 5. [MED] Include ways to test the algorithm other than the sample trees hard-coded in the main class.
+6. [LOW] Think if there is a way to generate random tree pairs where the distance is know before running the algorithm, then
+        use these tree pairs to test the algorithm more rigorously.
 

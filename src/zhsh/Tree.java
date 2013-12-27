@@ -140,6 +140,10 @@ public class Tree {
         }
     }
 
+    //The next static variable and the next two static methods constitute the actual algorithm by Zhang and Shasha.
+    /*TODO: Consider refactoring the static methods using a separate object or read more about what OOP design calls to do
+in this situation.*/
+
     static int[][] TD;
 
     public static int ZhangShasha(Tree tree1, Tree tree2){
