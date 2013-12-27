@@ -18,11 +18,11 @@ Why preorder? Because preorder notation is inherent through the Zhang-Shasha alg
 Parenthesized strings such as "f(d(a c(b))e)" are passed to the Tree class's constructor to make the corresponding Tree object. For example,
 "f(a b(c))" looks like this:
 
-    f
-   / \
-  a   b
-      |
-      c
+        f
+       / \
+      a   b
+          |
+          c
 
 
 The project's main class include some sample trees anyone reading this can test the algorithm on.
