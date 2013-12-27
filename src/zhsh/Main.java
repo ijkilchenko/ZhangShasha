@@ -18,14 +18,8 @@ public class Main {
         String tree1Str5= "d";
         String tree1Str6= "g(h)";
 
-        String sen1= "S(NP(The sky) VP(is ADJP(blue)))";
-        String sen2= "S(NP(The sky) VP(is ADJP(gray)))";
-
-        Tree tree1= new Tree(sen1);
-        Tree tree2= new Tree(sen2);
-
-//        Tree tree1= new Tree(sen1);
-//        Tree tree2= new Tree(sen2);
+        Tree tree1= new Tree(tree1Str1);
+        Tree tree2= new Tree(tree1Str1);
 
         int distance= Tree.ZhangShasha(tree1, tree2);
         System.out.println(distance);

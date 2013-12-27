@@ -9,14 +9,38 @@ import java.io.StringReader;
 import java.util.ArrayList;
 public class Tree {
     Node root= new Node();
-    ArrayList<Integer> l= new ArrayList<Integer>();
-    ArrayList<Integer> keyroots= new ArrayList<Integer>();
-    ArrayList<String> labels= new ArrayList<String>();
+    ArrayList<Integer> l= new ArrayList<Integer>(); //Function l() which gives the leftmost child.
+    ArrayList<Integer> keyroots= new ArrayList<Integer>(); //List of keyroots, i.e., nodes with a left child and the tree root.
+    ArrayList<String> labels= new ArrayList<String>(); //List of the labels of the nodes used for node comparison. //TODO: see #1 in README.
 
-    public Tree(){
+    //Uncomment the following constructor which handles slightly different preorder notation. E.g., (f a (b c)) instead of f(a b(c)).
+/*    public Tree(String s) throws IOException {
+        s= s.replaceAll("\\n", "");
+        StringBuilder sb = new StringBuilder();
+        for (int i= 0; i < s.length(); i++){
+            if (s.charAt(i) == '('){
+                int j= i;
+                while (i < s.length() && s.charAt(i) != ' '){
+                    i++;
+                }
+                sb.append(s.substring(j+1,i));
+                sb.append('(');
+            }
+            else{
+                sb.append(s.charAt(i));
+            }
+        }
+        s= sb.toString();
+        StreamTokenizer tokenizer= new StreamTokenizer(new StringReader(s));
+        tokenizer.nextToken();
 
-    }
+        root= parseString(new Node(), tokenizer);
+        if (tokenizer.ttype != StreamTokenizer.TT_EOF){
+            throw new RuntimeException("Leftover token: "+ tokenizer.ttype);
+        }
+    }*/
 
+    //The following constructor handles preorder notation. E.g., f(a b(c)).
     public Tree(String s) throws IOException {
         StreamTokenizer tokenizer= new StreamTokenizer(new StringReader(s));
         tokenizer.nextToken();
@@ -27,9 +51,9 @@ public class Tree {
     }
 
     private static Node parseString(Node node, StreamTokenizer tokenizer) throws IOException{
-        if (tokenizer.ttype != StreamTokenizer.TT_WORD){
+/*        if (tokenizer.ttype != StreamTokenizer.TT_WORD){
             throw new RuntimeException("Identifier expected; got: " + tokenizer.ttype);
-        }
+        }*/
         node.label= tokenizer.sval;
         tokenizer.nextToken();
         if (tokenizer.ttype == '(') {
@@ -43,6 +67,7 @@ public class Tree {
     }
 
     public void traverse(){
+        //Put together an ordered list of node labels of the tree.
         traverse(root, labels);
     }
 
@@ -55,6 +80,7 @@ public class Tree {
     }
 
     public void index(){
+        //Index each node in the tree according to traversal method (currently preorder traversal).
         index(root, 0);
     }
 
@@ -68,6 +94,7 @@ public class Tree {
     }
 
     public void l(){
+        //Put together a function which gives l(), the mapping of each node to its leftmost child.
         leftmost();
         l= l(root, new ArrayList<Integer>());
     }
@@ -98,6 +125,8 @@ public class Tree {
     }
 
     public void keyroots(){
+        //Calculate the keyroots, i.e., nodes with a left child and the tree root.
+        //This is the main improvement of Zhang Shasha over previous algorithms for tree-edit distance.
         for (int i= 0; i < l.size(); i++){
             int flag= 0;
             for (int j= i+1; j < l.size(); j++){
@@ -114,6 +143,7 @@ public class Tree {
     static int[][] TD;
 
     public static int ZhangShasha(Tree tree1, Tree tree2){
+        //Some initializations. //TODO: see #3 in README.
         tree1.index();
         tree1.l();
         tree1.keyroots();
@@ -128,8 +158,10 @@ public class Tree {
         ArrayList<Integer> l2= tree2.l;
         ArrayList<Integer> keyroots2= tree2.keyroots;
 
+        //The size of the following array is most of the space complexity of the algorithm.
         TD = new int[l1.size()+1][l2.size()+1];
 
+        //Solve subproblems.
         for (int i1= 1; i1 < keyroots1.size()+1; i1++){
             for (int j1= 1; j1 < keyroots2.size()+1; j1++){
                 int i= keyroots1.get(i1-1);
@@ -144,6 +176,7 @@ public class Tree {
     private static int treedist(ArrayList<Integer> l1, ArrayList<Integer> l2, int i, int j, Tree tree1, Tree tree2){
         int[][] forestdist= new int[i+1][j+1];
 
+        //These define the costs of the three atomic operations and can be changed freely according to application.
         int Delete= 1;
         int Insert= 1;
         int Relabel= 1;
@@ -160,6 +193,7 @@ public class Tree {
                 int i_temp= (l1.get(i-1) > i1-1)? 0: i1-1;
                 int j_temp= (l2.get(j-1) > j1-1)? 0: j1-1;
                 if ((l1.get(i1-1) == l1.get(i-1)) && (l2.get(j1-1) == l2.get(j-1))){
+                    //The following line compares the node labels. //TODO: Extend node comparison to handle generics. See #1 in README.
                     int Cost= (tree1.labels.get(i1-1).equals(tree2.labels.get(j1-1)))? 0: Relabel;
                     forestdist[i1][j1]= Math.min(Math.min(forestdist[i_temp][j1] + Delete, forestdist[i1][j_temp] + Insert),
                             forestdist[i_temp][j_temp] + Cost);
